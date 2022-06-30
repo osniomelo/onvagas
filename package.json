@@ -1,0 +1,23 @@
+{
+  "name": "onvagas",
+  "version": "1.0.0",
+  "description": "Desenvovimento do meu TCC",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./src/server.js",
+    "init:db": "node ./src/config/db/init.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "author": "Osni Melo",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}

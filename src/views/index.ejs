@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on vagas | Login</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main"> 
+        <section class="container">
+            <%- include('./partials/aside.ejs') %>
+            <div class="form__container">
+                <form id="form" action="/" method="POST">
+                    <div class="welcome">
+                        <h3>Bem vindo de volta</h3>
+                        <h1>Faça login na sua conta</h1>
+                    </div>
+                    <label for="E-mail">
+                        <span>E-mail:</span>
+                        <input type="email" placeholder="Digite seu e-mail..." required>
+                    </label>
+                    <label for="Senha">
+                        <span>Senha:</span>
+                        <input type="password" placeholder="Digite sua senha..." required>
+                    </label>
+                    <button class="signin">Entrar</button>
+                    <div class="separator">Novo por aqui?</div>
+                    <a class="signup" href="/register">Cadastre-se</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
