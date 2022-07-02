@@ -7,24 +7,12 @@
 
 .aside__container {
     display: flex;
+    justify-content: center;
     align-items: center;    
     background-color: var(--background-color);
     flex-direction: column;
     padding: 54px;
     gap: 1rem;
-}
-
-.logo {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    height: 7rem;
-}
-
-.logo > img {
-    max-width: 7.5rem;
-    height: 3rem;
-    align-items: center;
 }
 
 .wrapper {
@@ -69,7 +57,7 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #eaeeee;
+    background: #fff;
 }
 
 .welcome {
@@ -93,23 +81,24 @@ p {
     color: var(--text-color);
 }
 
+.logo img {
+    max-width: 15rem;
+    height: 3rem;
+}
+
 #form {
     width: 31rem;
-    max-height: 40rem;
-    padding: 3rem 4rem;
+    max-height: 50rem;
+    padding: 3.5rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    border: 1px solid var(--gray-color);
-    border-radius: 0.5rem;
-    background: #f9f9fe;
-    box-shadow: 10px 3px 20px rgb(58 58 1 / 10%);
+    gap: 1rem;
 }
 
 /*LABELS*/
 
-label[for=E-mail], label[for=Senha] {
+label {
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
     color: var(--text-color);
@@ -117,10 +106,10 @@ label[for=E-mail], label[for=Senha] {
 }
 
 /*INPUTS*/
-input[type=email], input[type=password] {
+input {
     width: 100%;
     background: transparent;
-    border: 1px solid var(--gray-color);
+    border: 1px solid #E8E8E8;
     border-radius: 0.2rem;
     height: 3rem;
     color: var(--black-color);
@@ -128,6 +117,43 @@ input[type=email], input[type=password] {
     padding: 0.5rem;    
     box-shadow: none;
     /*border-bottom: 0;*/
+}
+
+/*RADIO CHECKBOX*/
+fieldset {
+    max-width: 33rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    border: 1px solid #E8E8E8;
+    padding: 0.2rem 0.9rem; 
+}
+
+.legend__radio {
+    font-family: 'Lexand', sans-serif;
+    color: var(--text-color);
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+fieldset .radio {
+    display: flex;
+    justify-content: center;
+    flex-direction: unset;
+    align-items: center;
+}
+
+label .option__1, .option__2 {
+    font-family: 'Lexand', sans-serif;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+input[type=radio] {
+    width: 100%;
+    height: 1rem;
 }
 
 /*BUTTON*/

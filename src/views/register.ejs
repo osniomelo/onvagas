@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>on vagas | Login</title>
+    <title>on vagas | Cadastre-se</title>
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/general.css">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -17,8 +17,48 @@
     <body>
         <main class="main">
             <section class="container">
-                    <%- include('./partials/aside.ejs') %>
-                </aside>
+                <%- include('./partials/aside.ejs') %>
+                <div class="form__container">
+                    <div class="logo">
+                        <img src="/assets/images/logo_onvagas_n.png" alt="">
+                    </div>
+                    <form id="form" action="/" method="POST">
+                        <div class="welcome">
+                            <h1>Crie sua conta</h1>
+                        </div>
+                        <label for="Nome">
+                            <span>Nome:</span>
+                            <input type="text" placeholder="Digite seu nome..." required>
+                        </label>
+                        <label for="E-mail">
+                            <span>E-mail:</span>
+                            <input type="email" placeholder="Digite seu e-mail..." required>
+                        </label>
+                        <label for="Senha">
+                            <span>Senha:</span>
+                            <input type="password" placeholder="Digite sua senha..." required>
+                        </label>
+                        <label for="Confirmar Senha">
+                            <span>Confirmar senha:</span>
+                            <input type="password" placeholder="Digite a confirmação da senha..." required>
+                        </label>
+                        <fieldset>
+                            <legend class="legend__radio">Selecione o tipo de usuário</legend>
+                            <div class="radio" id="role">
+                                <label for="option__1">
+                                    <span class="option">Empregado</span>
+                                    <input type="radio" name="role" id="option__1" value="employe" checked>
+                                </label>
+                                <label for="option__2">
+                                    <span class="option">Recrutador</span>
+                                    <input type="radio" name="role" id="option__2" value="recruiter">
+                                </label>
+                            </div>
+                        </fieldset>
+                        <button class="signin">Entrar</button>
+                        <a class="signup" href="/">Voltar</a>
+                    </form> 
+                </div>
             </section>
         </main>
     </body>
