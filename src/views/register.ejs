@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>on vagas | Cadastre-se</title>
-    <!-- Styles -->
+    <!-- STYLES -->
     <link rel="stylesheet" href="/assets/css/general.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <!-- Fonts -->
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <!--RESPONSIVE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,400&display=swap" rel="stylesheet">
@@ -26,22 +30,26 @@
                         <div class="welcome">
                             <h1>Crie sua conta</h1>
                         </div>
-                        <label for="Nome">
-                            <span>Nome:</span>
-                            <input type="text" placeholder="Digite seu nome..." required>
-                        </label>
-                        <label for="E-mail">
-                            <span>E-mail:</span>
-                            <input type="email" placeholder="Digite seu e-mail..." required>
-                        </label>
-                        <label for="Senha">
-                            <span>Senha:</span>
-                            <input type="password" placeholder="Digite sua senha..." required>
-                        </label>
-                        <label for="Confirmar Senha">
-                            <span>Confirmar senha:</span>
-                            <input type="password" placeholder="Digite a confirmação da senha..." required>
-                        </label>
+                        <section class="first__fields">
+                            <label for="Nome">
+                                <span>Nome:</span>
+                                <input type="text" placeholder="Digite seu nome..." required>
+                            </label>
+                            <label for="E-mail">
+                                <span>E-mail:</span>
+                                <input type="email" placeholder="Digite seu e-mail..." required>
+                            </label>
+                        </section>
+                        <section class="second__fields">
+                            <label for="Senha">
+                                <span>Senha:</span>
+                                <input type="password" placeholder="Digite sua senha..." required>
+                            </label>
+                            <label for="Confirmar Senha">
+                                <span>Confirmar senha:</span>
+                                <input type="password" placeholder="Digite a confirmação da senha..." required>
+                            </label>
+                        </section>
                         <fieldset>
                             <legend class="legend__radio">Selecione o tipo de usuário</legend>
                             <div class="radio" id="role">

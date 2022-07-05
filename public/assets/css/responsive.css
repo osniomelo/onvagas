@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+    .main {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .aside__container {
+        display: none;
+    }
+    .form__container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo {
+        margin-top: 1rem;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .logo > img {
+        max-width: 8rem;
+        height: 3rem;
+    }
+
+    #form {
+        width: 100%;
+        padding: 1.5rem 2rem;
+    }
+
+    .first__fields, .second__fields {
+        display: flex;
+        flex-direction: column;
+    }
+}
