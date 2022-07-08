@@ -11,6 +11,17 @@
     --gray-color: #a8a8b3;
     --black-color:#090e24;
     --text-color: #1A202C;
+    --background-dashboard-color: rgb(18, 18, 20);
+    --card-color: rgb(32, 32, 36);
+    --green-color: #18C29C;
+    --dark-green-color: #084236;
+    --search-color: #8ED7C6;
+}
+
+h3, h2, h1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 body {
